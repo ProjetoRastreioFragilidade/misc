@@ -20,7 +20,7 @@ services:
       MYSQL_ROOT_PASSWORD: rootpw
       MYSQL_DATABASE: ppsus
       MYSQL_USER: ppsus
-      MYSQL_PASSWORD: rede243
+      MYSQL_PASSWORD: qcR2yuKS9Y4yakaxBvNwALEa8uo1ZeaF
   backend:
     # entrypoint: /entrypoint.sh
     build: backend
@@ -31,8 +31,11 @@ services:
     environment:
       DBNAME: ppsus
       DBUSER: ppsus
-      DBPASS: rede243
+      DBPASS: qcR2yuKS9Y4yakaxBvNwALEa8uo1ZeaF
       DBHOST: db
+      DJANGO_SECRET_KEY: laksjdlakJSDLKAJSdlaksjdlaksjdlaKSJDLAKSJDLKA
+      DJANGO_DEBUG: ""
+      DJANGO_SETTINGS_MODULE: "ppsus.settings"
       
 networks:
   backend:
